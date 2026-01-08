@@ -78,3 +78,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    // كل أزرار Share
+    const openBtns = document.querySelectorAll(".share-trigger");
+
+    const overlay = document.getElementById("shareOverlay");
+    const dialog = document.getElementById("shareDialog");
+    const closeBtn = document.querySelector("[data-slot='dialog-close']");
+
+    if (!openBtns.length || !overlay || !dialog || !closeBtn) return;
+
+    function openShare() {
+        overlay.classList.remove("hidden");
+        dialog.classList.remove("hidden");
+
+        overlay.setAttribute("data-state", "open");
+        dialog.setAttribute("data-state", "open");
+
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeShare() {
+        overlay.setAttribute("data-state", "closed");
+        dialog.setAttribute("data-state", "closed");
+
+        setTimeout(() => {
+            overlay.classList.add("hidden");
+            dialog.classList.add("hidden");
+        }, 200); // نفس مدة الأنيميشن
+
+        document.body.style.overflow = "";
+    }
+
+    // فتح من أي زر Share
+    openBtns.forEach(btn => {
+        btn.addEventListener("click", openShare);
+    });
+
+    // إغلاق بزر X
+    closeBtn.addEventListener("click", closeShare);
+
+    // إغلاق بالضغط خارج الديالوج
+    overlay.addEventListener("click", closeShare);
+
+    // إغلاق بزر ESC (احترافي)
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && dialog.getAttribute("data-state") === "open") {
+            closeShare();
+        }
+    });
+
+});
