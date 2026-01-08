@@ -70,14 +70,14 @@
             <span>
                 تغير اللغة:
             </span>
-            <button data-slot="button" id="langToggle"
-                class="justify-center whitespace-nowrap rounded-md transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive min-h-9 p-2 has-[>svg]:px-3 px-2 flex items-center gap-2 text-lg font-bold ">
+            <button data-slot="button" 
+                class="justify-center whitespace-nowrap langToggle rounded-md transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive min-h-9 p-2 has-[>svg]:px-3 px-2 flex items-center gap-2 text-lg font-bold ">
                 <span class="uppercase">en</span>
             </button>
         </label>
         <a class="contacut inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-muted-foreground  rounded-sm  font-bold text-white min-h-9 p-2 has-[>svg]:px-3 w-fit px-10"
             href="index.html#call-us">اتصل بنا</a>
-        <button id="menuCloseBtn" type="button" 
+        <button id="menuCloseBtn" type="button"
             class="ring-offset-background cursor-pointer focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none"
             fdprocessedid="8uah8">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -114,7 +114,7 @@
 
     </script>
 
-        <!-- =========> Social Share Dialog Modal (Share Buttons & Copy Link) <======== -->
+    <!-- =========> Social Share Dialog Modal (Share Buttons & Copy Link) <======== -->
     <div id="shareOverlay" data-state="open" data-slot="dialog-overlay"
         class="hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50"
         style="pointer-events: auto;" data-aria-hidden="true" aria-hidden="true"></div>
@@ -235,8 +235,8 @@
                     </ul>
                 </nav>
 
-                <button data-slot="button" id="langToggle"
-                    class="justify-center whitespace-nowrap rounded-md transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 min-h-9 p-2 has-[>svg]:px-3 px-10 flex w-14 items-center gap-2 text-xl font-bold text-white">
+                <button data-slot="button" 
+                    class="justify-center whitespace-nowrap langToggle rounded-md transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 min-h-9 p-2 has-[>svg]:px-3 px-10 flex w-14 items-center gap-2 text-xl font-bold text-white">
                     <span class="uppercase">en</span>
                 </button>
 
@@ -291,20 +291,41 @@
                         </button>
 
                     </div>
-                    <button type="button" role="combobox" aria-controls="radix-_r_g_" aria-expanded="false"
-                        aria-autocomplete="none" dir="rtl" data-state="closed" data-slot="select-trigger"
-                        data-size="default"
-                        class="data-[placeholder]:text-accent/50 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 dark:hover:bg-input/50 flex w-full items-center justify-between gap-2 rounded-sm border-[0.6px] bg-transparent px-2 py-1 whitespace-nowrap shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 data-[size=default]:h-9 data-[size=sm]:h-8 *:data-[slot=select-value]:line-clamp-1 *:data-[slot=select-value]:flex *:data-[slot=select-value]:items-center *:data-[slot=select-value]:gap-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-7 border-black text-lg font-bold text-black [&_svg:not([class*='text-'])]:text-black"
-                        fdprocessedid="luc13m">
-                        <span data-slot="select-value" style="pointer-events: none;" data-en="All models"
-                            data-ar="كل النماذج">كل النماذج</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            aria-hidden="true" role="img" class="iconify iconify--lucide" width="1em" height="1em"
-                            viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m6 9l6 6l6-6"></path>
-                        </svg>
-                    </button>
+                    <select id="modelsSelect" dir="rtl"
+                        class="flex w-full items-center justify-between gap-2 rounded-sm border-[0.6px] border-black bg-transparent px-2 py-1 text-lg font-bold text-black shadow-xs transition outline-none focus-visible:ring-[3px]">
+
+                        <option value="all" data-ar="كل النماذج" data-en="All models">
+                            كل النماذج
+                        </option>
+
+                        <option value="model1" data-ar="بنتهاوس" data-en="Penthouse">
+                            بنتهاوس
+
+                        </option>
+
+                        <option value="model2" data-ar=" تاون هاوس" data-en="Townhouse">
+                            تاون هاوس
+
+                        </option>
+
+                        <option value="model2" data-ar=" دور مستقل" data-en="Independent role">
+                            دور مستقل
+
+                        </option>
+                        <option value="model2" data-ar="نموذج 2" data-en="villa">
+                            شقق فاخرة
+
+                        </option>
+                        <option value="model2" data-ar="فيلا " data-en="Model 2">
+                            فيلا
+                        </option>
+                        <option value="model2" data-ar=" فيلا دوبليكس" data-en="Duplex villa">
+                            فيلا دوبليكس
+
+                        </option>
+
+                    </select>
+
                 </div>
 
                 <ul class="mt-11 grid grid-cols-1 gap-10 lg:grid-cols-3">
