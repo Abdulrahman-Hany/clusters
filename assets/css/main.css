@@ -1612,6 +1612,9 @@
     .w-\(--progress\) {
         width: 42%;
     }
+    .w-\(--progress-2\) {
+        width: 99%;
+    }
 
     .w-1\/2 {
         width: 50%
@@ -4992,7 +4995,9 @@
     .rtl\:right-\[calc\(var\(--progress\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
         right: 42%
     }
-
+    .rtl\:right-\[calc\(var\(--progress-2\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
+        right: 97%
+    }
     .rtl\:left-0:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
         left: calc(var(--spacing)*0)
     }
