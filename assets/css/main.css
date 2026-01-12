@@ -1610,7 +1610,7 @@
     }
 
     .w-\(--progress\) {
-        width: var(--progress)
+        width: 42%;
     }
 
     .w-1\/2 {
@@ -4990,7 +4990,7 @@
     }
 
     .rtl\:right-\[calc\(var\(--progress\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
-        right: calc(var(--progress) - 20px)
+        right: 42%
     }
 
     .rtl\:left-0:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
@@ -6085,4 +6085,27 @@ html[dir="rtl"] #radix-_R_3deivb_ {
     left: 0;
     z-index: 9999999999999999 !important;
     direction: ltr;
+}
+#modelsSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  left: 12px; /* RTL */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;   /* ← حجم السهم */
+  height: 12px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  transform: translateY(-50%) rotate(-45deg);
+  pointer-events: none;
 }
