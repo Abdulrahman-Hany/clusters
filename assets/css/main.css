@@ -1615,6 +1615,12 @@
     .w-\(--progress-2\) {
         width: 99%;
     }
+    .w-\(--progress-3\) {
+        width: 8%;
+    }
+    .w-\(--progress-4\) {
+        width: 100%;
+    }
 
     .w-1\/2 {
         width: 50%
@@ -4997,6 +5003,12 @@
     }
     .rtl\:right-\[calc\(var\(--progress-2\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
         right: 97%
+    }
+    .rtl\:right-\[calc\(var\(--progress-3\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
+        right: 7%
+    }
+    .rtl\:right-\[calc\(var\(--progress-4\)-20px\)\]:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
+        right: 98%
     }
     .rtl\:left-0:where(:dir(rtl), [dir=rtl], [dir=rtl] *) {
         left: calc(var(--spacing)*0)
